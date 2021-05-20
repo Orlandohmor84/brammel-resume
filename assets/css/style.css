@@ -1,0 +1,37 @@
+/*! ----------
+Style sheet for Bryan Ramme's Resume Website
+Author: Orlando Morales
+Email: admin@ibuildweb.solutions
+Last Date Modified: 2021/05/19
+------------- */
+
+/* -------------
+Sections
+ - Global
+ - Mobile
+ - Desktop
+---------- */
+
+/*----- Global -----*/
+h1 {
+    text-align: center;
+}
+#nav lh {
+    font-size: 2rem;
+}
+#nav li {
+    list-style-type: none;
+    text-align: left;
+}
+#nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*----- Mobile -----*/
+.callout {
+    background-color: lightblue;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
