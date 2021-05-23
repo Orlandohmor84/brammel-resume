@@ -13,6 +13,10 @@ Sections
 ---------- */
 
 /*----- Global -----*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
 h1 {
     text-align: center;
 }
@@ -27,6 +31,20 @@ h1 {
     text-decoration: none;
     color: #fff;
 }
+#mobile {
+    display: block;
+}
+#desktop {
+    display: none;
+}
+@media screen and (min-width:768px) {
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: block;
+    }
+}
 
 /*----- Mobile -----*/
 .callout {
@@ -34,4 +52,44 @@ h1 {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+.card {
+    margin-bottom: 20px;
+}
+
+/*----- Desktop -----*/
+#desktop .container-fluid {
+    padding: 0;
+}
+#desktop .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.topWireframeText {
+    background-color: #000;
+    color: #99ffcc;
+    font-weight: 700;
+    text-align: center;
+}
+#desktop {
+    text-align: center;
+}
+#desktop h2 {
+    font-size: 5rem;
+}
+#desktop .row-full-height {
+    width: 100%;
+    height: 100%;
+}
+#desktop .row-full-height .col {
+    height: 800px;
+}
+.skill {
+    margin-top: 50px;
+}
+.work-logos {
+    width: 90%;
+    height: auto;
+    max-width: 200px;
+    margin: auto;
 }
