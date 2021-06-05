@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * Bryan Rammel's Interactive Resume Website
-* Version 0.0
+* Version 0.1
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up ###
@@ -17,5 +17,5 @@
 
 ### Releases ###
 
-Coming Soon!
+* v0.1.0 - Mockup.
 
