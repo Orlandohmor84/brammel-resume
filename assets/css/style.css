@@ -7,10 +7,17 @@ Last Date Modified: 2021/05/19
 
 /* -------------
 Sections
+ - Fonts
  - Global
  - Mobile
  - Desktop
 ---------- */
+
+/*----- Fonts -----*/
+@font-face {
+    font-family: Mate;
+    src: url(../fonts/MateSC-Regular.ttf);
+}
 
 /*----- Global -----*/
 html, body {
@@ -19,6 +26,9 @@ html, body {
 }
 h1 {
     text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Mate;
 }
 #nav lh {
     font-size: 2rem;
@@ -48,15 +58,40 @@ h1 {
 
 /*----- Mobile -----*/
 .callout {
-    background-color: lightblue;
+    background-color: #3333ff;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
+.callout {
+    padding: 10px;
+}
+.callout h2 {
+    font-size: 1rem;
+}
+#nav h2 {
+    color: #e6e6e6;
+    font-size: 1.25rem;
+}
+#nav p {
+    line-height: 0.8;
+}
 .card {
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
-
+.card-body {
+    padding: 0;
+}
+.card-title {
+    color: #ffffff;
+    background-color: #3333ff;
+    background-image: linear-gradient(#3333ff, #80bfff);
+    padding: 1rem;
+}
+.card-subtitle, .card-text, .card-dates {
+    margin: 1rem;
+}
 /*----- Desktop -----*/
 #desktop .container-fluid {
     padding: 0;

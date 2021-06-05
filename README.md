@@ -17,5 +17,6 @@
 
 ### Releases ###
 
+* v1.1.1 - Mobile Styling.
 * v0.1.0 - Mockup.
 
