@@ -17,6 +17,7 @@
 
 ### Releases ###
 
+* v0.1.2 - Additional Desktop Styling.
 * v0.1.1 - Mobile Styling.
 * v0.1.0 - Mockup.
 
