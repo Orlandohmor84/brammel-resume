@@ -11,6 +11,9 @@ $(document).ready(function(){
     
 });
 
+
+/*
+// Not working
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -81,4 +84,5 @@ var observerContact = new IntersectionObserver(function(entries) {
 }, { threshold: [0] });
 observerContact.observe(document.querySelector("#contact"));
 
+*/
 

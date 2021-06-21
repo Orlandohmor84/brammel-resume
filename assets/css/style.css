@@ -108,12 +108,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     margin-right: 0;
 }
-.topWireframeText {
-    background-color: #000;
-    color: #99ffcc;
-    font-weight: 700;
-    text-align: center;
-}
 #desktop {
     text-align: center;
 }
@@ -122,12 +116,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 #intro {
     padding-top: 20px;
-} 
+}
+img.intro-img {
+    display: block;
+    width: 50%;
+    height: auto;
+    max-width: 400px;
+    margin: auto;
+}
 .skill {
     margin-top: 50px;
 }
+#skills h3 {
+    margin-top:200px;
+}
+.skills-img {
+    display: block;
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    margin: auto;
+}
 #logos-banner {
     padding: 20px;
+    margin-top:200px;
 }
 #logos-banner img {
     height: 60px;
@@ -142,6 +154,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 #contact {
     padding: 200px 0;
+}
+#contact img {
+    display: block;
+    width: 50%;
+    height: auto;
+    max-width: 400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #footer-progress-bar {
     visibility: hidden;
