@@ -3,7 +3,7 @@
 ## What is this repository for ##
 
 * Bryan Rammel's Interactive Resume Website
-* Version 0.1
+* Version 0.2
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up ###
@@ -17,6 +17,7 @@
 
 ### Releases ###
 
+* v0.2.0 - Removed Resume View.
 * v0.1.3 - Removed Inline Styling.
 * v0.1.2 - Additional Desktop Styling.
 * v0.1.1 - Mobile Styling.
