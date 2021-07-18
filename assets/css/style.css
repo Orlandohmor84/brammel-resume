@@ -28,6 +28,9 @@ h1 {
 h1, h2, h3, h4, h5, h6 {
     font-family: Mate;
 }
+section {
+    margin-bottom: 100px;
+}
 #nav lh {
     font-size: 2rem;
 }
@@ -48,7 +51,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ffffff;
     color: #3333ff;
 }
-
+.init-no-display {
+    display: none;
+}
 
 /*----- Desktop -----*/
 #desktop .container-fluid {
@@ -67,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 /*----- Intro -----*/
 #intro {
     padding-top: 20px;
+    border-bottom: 1px solid #00ff00;
 }
 img.intro-img {
     display: block;
@@ -75,22 +81,35 @@ img.intro-img {
     max-width: 400px;
     margin: auto;
 }
+/*----- College -----*/
+#college {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 /*----- Skills -----*/
-.skill {
-    margin-top: 50px;
-}
-#skills h3 {
-    margin-top:200px;
-}
 .skills-img {
     display: block;
     width: 50%;
     height: auto;
-    max-width: 200px;
     margin: auto;
 }
-
+.skills-img-half img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.skill {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.skill h4 {
+    margin-bottom: 20px;
+}
+.skill-text {
+    margin-top: 20px;
+}
 /*----- Experience -----*/
 #logos-banner {
     padding: 20px;
