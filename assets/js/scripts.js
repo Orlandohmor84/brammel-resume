@@ -1,14 +1,80 @@
+function showMarketingMore(){
+    $('#skill-marketing-default').hide();
+    $('#skill-marketing-detail').fadeIn();
+};
+function showMarketingLess(){
+    $('#skill-marketing-detail').hide();
+    $('#skill-marketing-default').fadeIn();
+};
+
+function showEntrepeneurshipMore(){
+    $('#skill-entrepeneurship-default').hide();
+    $('#skill-entrepeneurship-detail').fadeIn();
+};
+function showEntrepeneurshipLess(){
+    $('#skill-entrepeneurship-detail').hide();
+    $('#skill-entrepeneurship-default').fadeIn();
+};
+function showSalesMore(){
+    $('#skill-sales-default').hide();
+    $('#skill-sales-detail').fadeIn();
+};
+function showSalesLess(){
+    $('#skill-sales-detail').hide();
+    $('#skill-sales-default').fadeIn();
+};
+function showCommunicationMore(){
+    $('#skill-communication-default').hide();
+    $('#skill-communication-detail').fadeIn();
+};
+function showCommunicationLess(){
+    $('#skill-communication-detail').hide();
+    $('#skill-communication-default').fadeIn();
+};
+function showLeadershipMore(){
+    $('#skill-leadership-default').hide();
+    $('#skill-leadership-detail').fadeIn();
+};
+function showLeadershipLess(){
+    $('#skill-leadership-detail').hide();
+    $('#skill-leadership-default').fadeIn();
+};
+
+
 $(document).ready(function(){
 
     AOS.init();
-
-    // Shows Resume on Desktop when link clicked
-    $('#view-resume-link').click(function(){
-        console.log('View reume link clicked.')
-        $('#desktop').hide();
-        $('#mobile').show();
-    });  
     
+    $('#skill-marketing-more').click(function(){
+        showMarketingMore();
+    });
+    $('#skill-marketing-less').click(function(){
+        showMarketingLess();
+    });
+    $('#skill-entrepeneurship-more').click(function(){
+        showEntrepeneurshipMore();
+    });
+    $('#skill-entrepeneurship-less').click(function(){
+        showEntrepeneurshipLess();
+    });
+    $('#skill-sales-more').click(function(){
+        showSalesMore();
+    });
+    $('#skill-sales-less').click(function(){
+        showSalesLess();
+    });
+    $('#skill-communication-more').click(function(){
+        showCommunicationMore();
+    });
+    $('#skill-communication-less').click(function(){
+        showCommunicationLess();
+    });
+    $('#skill-leadership-more').click(function(){
+        showLeadershipMore();
+    });
+    $('#skill-leadership-less').click(function(){
+        showLeadershipLess();
+    });
 });
 
 
