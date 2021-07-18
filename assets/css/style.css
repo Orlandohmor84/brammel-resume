@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 /*----- Intro -----*/
 #intro {
     padding-top: 20px;
+    border-bottom: 1px solid #00ff00;
 }
 img.intro-img {
     display: block;
@@ -75,10 +76,13 @@ img.intro-img {
     max-width: 400px;
     margin: auto;
 }
-
+/*----- Education -----*/
+#education {
+    margin-top: 200px;
+} 
 /*----- Skills -----*/
 .skill {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 #skills h3 {
     margin-top:200px;
