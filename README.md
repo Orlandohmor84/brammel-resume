@@ -17,6 +17,7 @@
 
 ### Releases ###
 
+* v0.2.1 - Image and Skills Updates.
 * v0.2.0 - Removed Resume View.
 * v0.1.3 - Removed Inline Styling.
 * v0.1.2 - Additional Desktop Styling.
