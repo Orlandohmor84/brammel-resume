@@ -1,133 +1,14 @@
-var browserWidth = $(window).width();
-
-function marketingShowDesc() {
-    var marketingHeight = $('#skill-marketing').height();
-    var marketingHeightPx = marketingHeight + 'px';
-    $('.skill-marketing-half').css('height',marketingHeightPx);
-    if (browserWidth < 576) {
-        console.log('Browser is less than 576px');
-        $('#skill-marketing-img-full').show();
-        $('#skill-marketing-img-half').hide();
-        $('#skill-marketing-text-half').fadeIn();
-    }
-    else if (browserWidth < 992) {
-        console.log('Browser is less than 992px');
-        $('#skill-marketing-img-full').hide();
-        $('#skill-marketing-img-half').fadeIn();
-        $('#skill-marketing-text-half').fadeIn();
-    } else {
-        console.log('Browser is greater than 992px');
-        $('#skill-marketing-img-full').hide();
-        $('#skill-marketing-img-half').fadeIn();
-        $('#skill-marketing-text-half').fadeIn();
-    }
-};
-function marketingHideDesc() {
-    $('#skill-marketing-img-half').hide();
-    $('#skill-marketing-text-half').hide();
-    $('#skill-marketing-img-full').fadeIn();
-};
-
-function entrepeneurshipShowDesc() {
-    var entrepeneurshipHeight = $('#skill-entrepeneurship').height();
-    var entrepeneurshipHeightPx = entrepeneurshipHeight + 'px';
-    $('.skill-entrepeneurship-half').css('height',entrepeneurshipHeightPx);
-    if (browserWidth < 992) {
-        $('#skill-entrepeneurship-img-full').show();
-        $('#skill-entrepeneurship-img-half').hide();
-        $('#skill-entrepeneurship-text-half').fadeIn();
-    } else {
-        $('#skill-entrepeneurship-img-full').hide();
-        $('#skill-entrepeneurship-img-half').fadeIn();
-        $('#skill-entrepeneurship-text-half').fadeIn();
-    }
-};
-function entrepeneurshipHideDesc() {
-    $('#skill-entrepeneurship-img-half').hide();
-    $('#skill-entrepeneurship-text-half').hide();
-    $('#skill-entrepeneurship-img-full').fadeIn();
-};
-
-function salesShowDesc() {
-    var salesHeight = $('#skill-sales').height();
-    var salesHeightPx = salesHeight + 'px';
-    $('.skill-sales-half').css('height',salesHeightPx);
-    if (browserWidth < 992) {
-        $('#skill-sales-img-full').show();
-        $('#skill-sales-img-half').hide();
-        $('#skill-sales-text-half').fadeIn();
-    } else {
-        $('#skill-sales-img-full').hide();
-        $('#skill-sales-img-half').fadeIn();
-        $('#skill-sales-text-half').fadeIn();
-    }  
-};
-function salesHideDesc() {
-    $('#skill-sales-img-half').hide();
-    $('#skill-sales-text-half').hide();
-    $('#skill-sales-img-full').fadeIn();
-};
-
-function communicationShowDesc() {
-    var communicationHeight = $('#skill-communication').height();
-    var communicationHeightPx = communicationHeight + 'px';
-    $('.skill-communication-half').css('height',communicationHeightPx);
-    if (browserWidth < 992) {
-        $('#skill-communication-img-full').show();
-        $('#skill-communication-img-half').hide();
-        $('#skill-communication-text-half').fadeIn();
-    } else {
-        $('#skill-communication-img-full').hide();
-        $('#skill-communication-img-half').fadeIn();
-        $('#skill-communication-text-half').fadeIn();
-    }
-};
-function communicationHideDesc() {
-    $('#skill-communication-img-half').hide();
-    $('#skill-communication-text-half').hide();
-    $('#skill-communication-img-full').fadeIn();
-};
-
-function leadershipShowDesc() {
-    var leadershipHeight = $('#skill-leadership').height();
-    var leadershipHeightPx = leadershipHeight + 'px';
-    $('.skill-leadership-half').css('height',leadershipHeightPx);
-    if (browserWidth < 992) {
-        $('#skill-leadership-img-full').show();
-        $('#skill-leadership-img-half').hide();
-        $('#skill-leadership-text-half').fadeIn();
-    } else {
-        $('#skill-leadership-img-full').hide();
-        $('#skill-leadership-img-half').fadeIn();
-        $('#skill-leadership-text-half').fadeIn();
-    }
-    
-};
-function leadershipHideDesc() {
-    $('#skill-leadership-img-half').hide();
-    $('#skill-leadership-text-half').hide();
-    $('#skill-leadership-img-full').fadeIn();
-};
-
 $(document).ready(function(){
+
     AOS.init();
-    console.log(browserWidth);
-    if (browserWidth < 576) {
-        $('.skills-img').show();
-        $('.skills-img-half').hide();
-        $('.skill-text').fadeIn();
-    } else if (browserWidth < 992) {
-        $('.skills-img').hide();
-        $('.skills-img-half').fadeIn();
-        $('.skill-text').fadeIn();
-    } else {
-        $('#skill-marketing').hover( marketingShowDesc, marketingHideDesc );
-        $('#skill-entrepeneurship').hover( entrepeneurshipShowDesc, entrepeneurshipHideDesc );
-        $('#skill-sales').hover( salesShowDesc, salesHideDesc );
-        $('#skill-communication').hover( communicationShowDesc, communicationHideDesc );
-        $('#skill-leadership').hover( leadershipShowDesc, leadershipHideDesc );
-    }
-     
+
+    // Shows Resume on Desktop when link clicked
+    $('#view-resume-link').click(function(){
+        console.log('View reume link clicked.')
+        $('#desktop').hide();
+        $('#mobile').show();
+    });  
+    
 });
 
 
